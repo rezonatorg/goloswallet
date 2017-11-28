@@ -1,6 +1,6 @@
 var NUTT = document.querySelector("a.check");
 NUTT.addEventListener("click", function( event ) {
-var  accou= document.getElementById("nikky").value;
+var  accou= document.getElementById("nikky").value.toLocaleLowerCase().trim();
 
 var socket = new WebSocket('wss://api.golos.cf'), rez;
 
