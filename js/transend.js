@@ -5,8 +5,8 @@ steem.config.set('chain_id','782a3039b478c839e4cb0c941ff4eaeb7df40bdd68bd441afd4
 var BUTT = document.querySelector("a.trans");
 BUTT.addEventListener("click", function( event ) {
 var  wif= document.getElementById("wif").value;
-var  sender= document.getElementById("sender").value;
-var  pol= document.getElementById("pol").value;
+var  sender= document.getElementById("sender").value.toLocaleLowerCase().trim();
+var  pol= document.getElementById("pol").value.toLocaleLowerCase().trim();
 var  mone= document.getElementById("mone").value;
 var  memo= document.getElementById("memo").value;
 var  gog= document.getElementById("gog").value;
