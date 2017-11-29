@@ -10,8 +10,10 @@ var  pol= document.getElementById("pol").value.toLocaleLowerCase().trim();
 var  mone= document.getElementById("mone").value;
 var  memo= document.getElementById("memo").value;
 var  gog= document.getElementById("gog").value;
+var bbb = Math.round(mone*1000)/1000;;
+var vvv= bbb.toFixed(3)
 
-steem.broadcast.transfer(wif, sender, pol, mone + ' ' + gog, memo, function(err, result) {
+steem.broadcast.transfer(wif, sender, pol, vvv + ' ' + gog, memo, function(err, result) {
   console.log(err, result);
    if(result) { 
  console.log(result);
